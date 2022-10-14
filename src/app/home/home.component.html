@@ -1,8 +1,7 @@
 <div class="test">
     <h3>Đây là Component Home</h3>
     <p>chào bạn {{name }}</p>
-    <input value="{{ name }}"/>
+    <input [(ngModel)]="name"/>
     <br/>
-    <h2 *ngIf="age >18">bạn quá già rồi!</h2>
-    <h2 *ngIf="age <=18">bạn còn trẻ lắm!</h2>
+    <button (click)="resetName()">Reset tên </button>
 </div>
