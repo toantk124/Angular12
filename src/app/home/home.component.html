@@ -1,4 +1,8 @@
 <div class="test">
     <h3>Đây là Component Home</h3>
-    <p>thêm hàng thứ 2 trong Home</p>
+    <p>chào bạn {{name }}</p>
+    <input value="{{ name }}"/>
+    <br/>
+    <h2 *ngIf="age >18">bạn quá già rồi!</h2>
+    <h2 *ngIf="age <=18">bạn còn trẻ lắm!</h2>
 </div>
